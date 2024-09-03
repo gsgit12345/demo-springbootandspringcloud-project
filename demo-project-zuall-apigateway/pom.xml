@@ -2,32 +2,41 @@
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <parent>
         <artifactId>demo-springbootandspringcloud-project</artifactId>
         <groupId>com.example</groupId>
         <version>0.0.1-SNAPSHOT</version>
+
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>demo-project-eureka-server</artifactId>
 
-    <name>demo-project-eureka-server</name>
+    <artifactId>demo-project-zuall-apigateway</artifactId>
+
+    <name>demo-project-zuall-apigateway</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <spring-cloud.version>2022.0.3</spring-cloud.version>
-
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+            <version>1.4.7.RELEASE</version>
         </dependency>
 
         <dependency>
@@ -35,8 +44,12 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -48,7 +61,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
         <!-- <sourceDirectory>src/main/java</sourceDirectory> -->
         <plugins>
@@ -63,3 +75,4 @@
         </plugins>
     </build>
 </project>
+

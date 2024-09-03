@@ -7,8 +7,11 @@
 		<module>demo-project-mobileapp</module>
         <module>demo-project-eureka-server</module>
 		<module>demo-project-user-service</module>
+		<module>demo-project-account-management</module>
+		<module>demo-project-zuall-apigateway</module>
+		<module>demo-project-springcloud-gateway</module>
 
-    </modules>
+	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

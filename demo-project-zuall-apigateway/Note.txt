@@ -1,0 +1,11 @@
+http://localhost:8011/USER-WS/users/status/
+
+http://localhost:8011/ACCOUNT-WS/account/status
+
+accessinng  the   webservices  usinng  zuul  apigateway
+
+
+mvn  spring-boot:run   -Dspring-boot.run.arguments=--spring.application.instance-id=ghanshyam  :--running the springboot from command promt
+
+https://www.geeksforgeeks.org/spring-boot-with-h2-database/        ---addinng  the  h2  database
+
